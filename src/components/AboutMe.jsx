@@ -6,10 +6,6 @@ import hothamPic from "../styles/images/mehotham copy.jpg";
 const AboutMe = () => {
 	return (
 		<div>
-			<header className="landing-text">
-				<h1>Gareth Beer</h1>
-				<h6>Software Developer</h6>
-			</header>
 			<section className="aboutMeContainer">
 				<div className="about-container">
 					<div className="profile-img">
@@ -45,7 +41,27 @@ const AboutMe = () => {
 										target="_blank"
 										rel="noopener noreferrer"
 									>
-										<i className="fab fa-instagram"></i>
+										<span className="fab fa-instagram"></span>
+									</a>
+								</li>
+								<li>
+									<a
+										className="icon-link"
+										href="https://github.com/GarethBeer"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<span className="fab fa-github"></span>
+									</a>
+								</li>
+								<li>
+									<a
+										className="icon-link"
+										href="https://www.freecodecamp.org/gareth.beer"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<span className="fab fa-free-code-camp"></span>
 									</a>
 								</li>
 								<li>
@@ -55,7 +71,7 @@ const AboutMe = () => {
 										target="_blank"
 										rel="noopener noreferrer"
 									>
-										<i className="fab fa-linkedin-in"></i>
+										<span className="fab fa-linkedin-in"></span>
 									</a>
 								</li>
 							</ul>
