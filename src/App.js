@@ -23,7 +23,7 @@ const App = () => {
 					)}
 				/>
 
-				<Route path="/Skills" component={Projects} />
+				<Route path="/Projects" component={Projects} />
 
 				<Route path="/ContactMe" component={ContactMe} />
 			</Switch>

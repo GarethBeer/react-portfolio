@@ -13,11 +13,11 @@ const Skills = () => {
 				</p>
 			</div>
 			<div className="card">
-				<div className="card-header">
-					<h5>Dice Game</h5>
-				</div>
 				<div className="card-image">
 					<img src={dicePic} alt="dice-game" />
+				</div>
+				<div className="card-header">
+					<h5>Dice Game</h5>
 				</div>
 				<div className="card-text">
 					<p>
