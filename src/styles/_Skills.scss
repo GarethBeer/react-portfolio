@@ -1,0 +1,251 @@
+.skills {
+	.my-skills {
+		margin-top: 10rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	.skill {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+		color: rgba(255, 255, 255, 0.664);
+		width: 300px;
+	}
+
+	.skill h1 {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin: 2rem -2px 2rem 0;
+		color: red;
+		&:hover {
+			color: #f7df1f;
+		}
+	}
+
+	.icon-container {
+		width: 10rem;
+		height: 10rem;
+		border: 3px solid white;
+		background-color: rgba(245, 245, 245, 0.329);
+
+		margin-bottom: 2rem;
+		display: flex;
+		transform: rotate(45deg);
+	}
+
+	.icon-container span {
+		color: rgba(245, 245, 245, 0.329);
+
+		font-size: 5rem;
+		margin: auto;
+		transform: rotate(-45deg);
+	}
+
+	.icon-container.css {
+		&:hover {
+			border: 4px solid #3596d0;
+
+			span {
+				animation: spincss 500ms;
+				animation-fill-mode: forwards;
+			}
+		}
+	}
+	.icon-container.js {
+		&:hover {
+			border: 4px solid #f7df1f;
+
+			span {
+				animation: spinjs 500ms;
+				animation-fill-mode: forwards;
+			}
+		}
+	}
+	.icon-container.sass {
+		&:hover {
+			border: 4px solid #cf649a;
+
+			span {
+				animation: spinsass 500ms;
+				animation-fill-mode: forwards;
+			}
+		}
+	}
+	.skill.html {
+		&:hover {
+			p {
+				color: #e44c27;
+			}
+			h1 {
+				color: #e44c27;
+			}
+			span {
+				animation: spinhtml 500ms;
+				animation-fill-mode: forwards;
+			}
+			.icon-container {
+				border: 4px solid #e44c27;
+			}
+		}
+	}
+
+	.icon-container.node {
+		&:hover {
+			border: 4px solid #72a861;
+			span {
+				animation: spinnode 500ms;
+				animation-fill-mode: forwards;
+			}
+		}
+	}
+	.icon-container.react {
+		&:hover {
+			border: 4px solid #04d8ff;
+
+			span {
+				animation: spinreact 500ms;
+				animation-fill-mode: forwards;
+			}
+		}
+	}
+}
+
+@keyframes spincss {
+	0% {
+		transform: rotate(-45deg);
+		color: #3596d0;
+	}
+	25% {
+		transform: rotate(-90deg);
+		color: #3596d0;
+	}
+	50% {
+		transform: rotate(-180deg);
+		color: #3596d0;
+	}
+	75% {
+		transform: rotate(-270deg);
+		color: #3596d0;
+	}
+	100% {
+		transform: rotate(-405deg);
+		color: #3596d0;
+	}
+}
+@keyframes spinhtml {
+	0% {
+		transform: rotate(-45deg);
+		color: #e44c27;
+	}
+	25% {
+		transform: rotate(-90deg);
+		color: #e44c27;
+	}
+	50% {
+		transform: rotate(-180deg);
+		color: #e44c27;
+	}
+	75% {
+		transform: rotate(-270deg);
+		color: #e44c27;
+	}
+	100% {
+		transform: rotate(-405deg);
+		color: #e44c27;
+	}
+}
+@keyframes spinsass {
+	0% {
+		transform: rotate(-45deg);
+		color: #cf649a;
+	}
+	25% {
+		transform: rotate(-90deg);
+		color: #cf649a;
+	}
+	50% {
+		transform: rotate(-180deg);
+		color: #cf649a;
+	}
+	75% {
+		transform: rotate(-270deg);
+		color: #cf649a;
+	}
+	100% {
+		transform: rotate(-405deg);
+		color: #cf649a;
+	}
+}
+@keyframes spinjs {
+	0% {
+		transform: rotate(-45deg);
+		color: #f7df1f;
+	}
+	25% {
+		transform: rotate(-90deg);
+		color: #f7df1f;
+	}
+	50% {
+		transform: rotate(-180deg);
+		color: #f7df1f;
+	}
+	75% {
+		transform: rotate(-270deg);
+		color: #f7df1f;
+	}
+	100% {
+		transform: rotate(-405deg);
+		color: #f7df1f;
+	}
+}
+@keyframes spinnode {
+	0% {
+		transform: rotate(-45deg);
+		color: #72a861;
+	}
+	25% {
+		transform: rotate(-90deg);
+		color: #72a861;
+	}
+	50% {
+		transform: rotate(-180deg);
+		color: #72a861;
+	}
+	75% {
+		transform: rotate(-270deg);
+		color: #72a861;
+	}
+	100% {
+		transform: rotate(-405deg);
+		color: #72a861;
+	}
+}
+@keyframes spinreact {
+	0% {
+		transform: rotate(-45deg);
+		color: #04d8ff;
+	}
+	25% {
+		transform: rotate(-90deg);
+		color: #04d8ff;
+	}
+	50% {
+		transform: rotate(-180deg);
+		color: #04d8ff;
+	}
+	75% {
+		transform: rotate(-270deg);
+		color: #04d8ff;
+	}
+	100% {
+		transform: rotate(-405deg);
+		color: #04d8ff;
+	}
+}

@@ -1,0 +1,46 @@
+.card {
+	width: 500px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 30px 450px 200px;
+	grid-template-areas: "title" "image" "text";
+
+	border-radius: 18px;
+	background-color: darkgrey;
+	font-family: roboto;
+	text-align: center;
+
+	cursor: pointer;
+	margin: 50px;
+
+	.card-header {
+		grid-area: title;
+
+		h5 {
+			color: white;
+			margin: 0px;
+			padding: 10px;
+			font-size: 20px;
+		}
+	}
+
+	.card-image {
+		grid-area: image;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.card-text {
+		grid-area: text;
+		background-color: darkgrey;
+		p {
+			color: rgb(0, 0, 2);
+			font-size: 15px;
+			font-weight: 300;
+			margin: 50px;
+		}
+	}
+}
