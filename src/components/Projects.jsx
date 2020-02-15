@@ -2,15 +2,13 @@ import React, { useState } from "react";
 
 const Projects = props => {
 	const [state, setButtons] = useState({
-		active: "",
-		Fstyle: "frontEnd",
-		Bstyle: "backEnd"
+		active: "frontEnd",
+		Fstyle: "clicked",
+		Bstyle: ""
 	});
 
 	let frontEnd;
 	let backEnd;
-	let Fstyle;
-	let Bstyle;
 
 	if (state.active === "frontEnd") {
 		frontEnd = (
@@ -36,10 +34,18 @@ const Projects = props => {
 						</p>
 					</div>
 					<div className="card-buttons">
-						<a href="https://github.com/GarethBeer/React--surrreal-estate">
+						<a
+							href="https://github.com/GarethBeer/React--surrreal-estate"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<button>GitHub</button>
 						</a>
-						<a href="https://github.com/GarethBeer/React--surrreal-estate">
+						<a
+							href="https://github.com/GarethBeer/React--surrreal-estate"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<button>Live Demo</button>
 						</a>
 					</div>
@@ -64,25 +70,140 @@ const Projects = props => {
 						</p>
 					</div>
 					<div className="card-buttons">
-						<button>GitHub</button>
-						<button>Live Demo</button>
+						<a
+							href="https://github.com/GarethBeer/React--surrreal-estate"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>GitHub</button>
+						</a>
+						<a
+							href="https://github.com/GarethBeer/React--surrreal-estate"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>Live Demo</button>
+						</a>
+					</div>
+				</div>
+				<div className="card">
+					<div className="card-image">
+						<img
+							src="https://oi350.photobucket.com/albums/q408/garethbeer1989/Screenshot%202020-02-15%20at%2022.32.59_zps2pvjn19j.png"
+							alt="Weather App"
+						/>
+					</div>
+					<div className="card-header">
+						<h5>Weather App</h5>
+					</div>
+					<div className="card-text">
+						<p>
+							This Project was part of my time at Manchester Codes. The task was
+							to create a real estate website using react which allows a user to
+							log in with their facebook account and view properties and save
+							their favourites. The user can also add properties to the
+							database.
+						</p>
+					</div>
+					<div className="card-buttons">
+						<a
+							href="https://github.com/GarethBeer/WeatherApp"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>GitHub</button>
+						</a>
+						<a
+							href="https://weather-app-xi.now.sh/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>Live Demo</button>
+						</a>
 					</div>
 				</div>
 			</div>
 		);
-
-		Fstyle = state.Fstyle;
 	}
 
 	if (state.active === "backEnd") {
 		backEnd = (
 			<div className="projects back">
-				<div className="project-card"></div>
-				<div>Hello enemies</div>
+				<div className="card">
+					<div className="card-image">
+						<img
+							src="https://cdn.aarp.net/content/dam/aarp/entertainment/music/2018/02/1140-swedish-clean-your-record-collection-01.imgcache.rev4eaf23c646379baa9401d97184efc01b.jpg"
+							alt="music collection"
+						/>
+					</div>
+					<div className="card-header">
+						<h5>Music-API</h5>
+					</div>
+					<div className="card-text">
+						<p>
+							This Project was part of my time at Manchester Codes. The task was
+							to create a real estate website using react which allows a user to
+							log in with their facebook account and view properties and save
+							their favourites. The user can also add properties to the
+							database.
+						</p>
+					</div>
+					<div className="card-buttons">
+						<a
+							href="https://github.com/GarethBeer/music-api"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>GitHub</button>
+						</a>
+						<a
+							href="https://github.com/GarethBeer/React--surrreal-estate"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>Live Demo</button>
+						</a>
+					</div>
+				</div>
+				<div className="card">
+					<div className="card-image">
+						<img
+							src="https://angelusnews.com/system/images/W1siZiIsIjIwMTkvMDQvMjkvNm05cnU2cnp0el9Cb29rX2NvbGxlY3Rpb24uanBnIl0sWyJwIiwidGh1bWIiLCIxNDAweCJdXQ/image.jpg"
+							alt="music collection"
+						/>
+					</div>
+					<div className="card-header">
+						<h5>Music-API</h5>
+					</div>
+					<div className="card-text">
+						<p>
+							This Project was part of my time at Manchester Codes. The task was
+							to create a real estate website using react which allows a user to
+							log in with their facebook account and view properties and save
+							their favourites. The user can also add properties to the
+							database.
+						</p>
+					</div>
+					<div className="card-buttons">
+						<a
+							href="https://github.com/GarethBeer/library-api"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>GitHub</button>
+						</a>
+						<a
+							href="https://github.com/GarethBeer/React--surrreal-estate"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>Live Demo</button>
+						</a>
+					</div>
+				</div>
 			</div>
 		);
-		Bstyle = state.Bstyle;
-	}
+	} //
 	return (
 		<section className="project-page">
 			<div className="projects-tab">
@@ -90,10 +211,11 @@ const Projects = props => {
 					onClick={() =>
 						setButtons({
 							active: "frontEnd",
-							Fstyle: "clicked"
+							Fstyle: "clicked",
+							Bstyle: ""
 						})
 					}
-					className={Fstyle}
+					className={state.Fstyle}
 				>
 					FrontEnd
 				</button>
@@ -101,10 +223,11 @@ const Projects = props => {
 					onClick={() =>
 						setButtons({
 							active: "backEnd",
+							Fstyle: "",
 							Bstyle: "clicked"
 						})
 					}
-					className={Bstyle}
+					className={state.Bstyle}
 				>
 					BackEnd
 				</button>
