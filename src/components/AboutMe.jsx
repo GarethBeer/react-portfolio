@@ -1,86 +1,86 @@
 import React from "react";
-import Skills from "./Skills";
-
-import hothamPic from "../styles/images/mehotham copy.jpg";
 
 const AboutMe = () => {
 	return (
-		<div>
-			<section className="aboutMeContainer">
-				<div className="about-container">
-					<div className="profile-img">
-						<img src={hothamPic} alt="me at hotham ski resort" />
+		<section className="aboutMeContainer">
+			<div className="about-container">
+				<div className="profile-img">
+					<img
+						src="https://oi350.photobucket.com/albums/q408/garethbeer1989/mehotham%20copy_zps2r4khafc.jpg"
+						alt="me at hotham ski resort"
+					/>
+				</div>
+				<div className="about-details">
+					<div className="about-heading">
+						<h1>About</h1>
+						<h6>Myself</h6>
 					</div>
-					<div className="about-details">
-						<div className="about-heading">
-							<h1>About</h1>
-							<h6>Myself</h6>
-						</div>
-						<p>
-							I have a passion for IT and have from an early age but have never
-							done anything with it, I have always been fairly technically
-							minded and enjoyed tinkering on computers as well as taking them
-							apart just for the sake of it. Having spent evenings completing
-							challenges on codeacademy and freecodecamp I thought it was time
-							to put my money where my mouth is and prove to myself and others
-							that I can do this for real. That is why I decided to take the
-							plunge and book on the MCR codes software engineering fastrack
-							course because it would give me the push to turn a geniune
-							interest and passion into a career.
-						</p>
-						<p>
-							My dream would be to work within the snow sports or the adventure
-							tourism industry as a developer so that I could combine my two
-						</p>
-						<div className="social-media">
-							<ul className="social-list">
-								<li>
-									<a
-										className="icon-link"
-										href="https://www.instagram.com/misterbeer89/"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<span className="fab fa-instagram"></span>
-									</a>
-								</li>
-								<li>
-									<a
-										className="icon-link"
-										href="https://github.com/GarethBeer"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<span className="fab fa-github"></span>
-									</a>
-								</li>
-								<li>
-									<a
-										className="icon-link"
-										href="https://www.freecodecamp.org/gareth.beer"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<span className="fab fa-free-code-camp"></span>
-									</a>
-								</li>
-								<li>
-									<a
-										className="icon-link"
-										href="http://www.linkedin.com/in/garethbeerjs"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<span className="fab fa-linkedin-in"></span>
-									</a>
-								</li>
-							</ul>
-						</div>
+					<p>
+						I have a passion for creating a fantastic user experience with
+						whatever it is I develop. I like to work across the full stack using
+						JavaScript as the main programming language. On the frontend I
+						prefer to use the JavaScript library React. I find that it produces
+						clean modular code which is reusable and easier to maintain allowing
+						for greater productivity. For the backend I use Node with Express
+						and Mongoose with MongoDb.
+					</p>
+					<p>
+						Please have a look through my website, it's been created using React
+						and Sass. If you like what you see and want to get in touch to
+						discuss working together please head over to the contact me page or
+						catch me on Linkedin.
+					</p>
+					<p>
+						Feel free to check out my GitHub to look at what I am currently
+						working on.
+					</p>
+					<div className="social-media">
+						<ul className="social-list">
+							<li>
+								<a
+									className="icon-link"
+									href="https://www.instagram.com/misterbeer89/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<span className="fab fa-instagram"></span>
+								</a>
+							</li>
+							<li>
+								<a
+									className="icon-link"
+									href="https://github.com/GarethBeer"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<span className="fab fa-github"></span>
+								</a>
+							</li>
+							<li>
+								<a
+									className="icon-link"
+									href="https://www.freecodecamp.org/gareth.beer"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<span className="fab fa-free-code-camp"></span>
+								</a>
+							</li>
+							<li>
+								<a
+									className="icon-link"
+									href="http://www.linkedin.com/in/garethbeerjs"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<span className="fab fa-linkedin-in"></span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</section>
-			<Skills />
-		</div>
+			</div>
+		</section>
 	);
 };
 

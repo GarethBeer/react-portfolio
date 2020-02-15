@@ -1,14 +1,19 @@
 .skills {
+	padding: 1rem 2rem;
 	.my-skills {
 		margin-top: 10rem;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: flex-start;
 		flex-wrap: wrap;
 		text-align: center;
 	}
-
+	.section-heading h6 {
+		font-size: 1.6rem;
+		font-weight: 300;
+		color: white;
+	}
 	.skill {
 		display: flex;
 		flex-direction: column;
@@ -17,13 +22,11 @@
 		padding: 2rem;
 		color: rgba(255, 255, 255, 0.664);
 		width: 300px;
-	}
-
-	.skill h1 {
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		margin: 2rem -2px 2rem 0;
-		
+		h1 {
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin: 2rem -2px 2rem 0;
+		}
 	}
 
 	.icon-container {
@@ -137,18 +140,22 @@
 		transform: rotate(-45deg);
 		color: #3596d0;
 	}
+
 	25% {
 		transform: rotate(-90deg);
 		color: #3596d0;
 	}
+
 	50% {
 		transform: rotate(-180deg);
 		color: #3596d0;
 	}
+
 	75% {
 		transform: rotate(-270deg);
 		color: #3596d0;
 	}
+
 	100% {
 		transform: rotate(-405deg);
 		color: #3596d0;

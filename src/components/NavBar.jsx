@@ -28,6 +28,9 @@ class Navbar extends Component {
 					<Link to="/" className="links" onClick={this.handleNavBar}>
 						About
 					</Link>
+					<Link to="/Skills" className="links" onClick={this.handleNavBar}>
+						Skills
+					</Link>
 					<Link to="/Projects" className="links" onClick={this.handleNavBar}>
 						Projects
 					</Link>

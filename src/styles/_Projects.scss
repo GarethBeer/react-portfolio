@@ -1,51 +1,98 @@
-.card {
-	width: 500px;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 450px 30px min(150px);
-	grid-template-areas: "image" "title" "text";
-
-	border-radius: 18px;
-	background-color: darkgrey;
-	font-family: roboto;
-	text-align: center;
-
-	cursor: pointer;
-	margin: 50px;
-
-	.card-header {
-		grid-area: title;
-
-		h5 {
-			color: white;
-			margin: 0px;
-			padding: 10px;
-			font-size: 20px;
+.project-page {
+	padding: 1rem 2rem;
+	.projects-tab {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button {
+			width: 5rem;
+			height: 2rem;
+			border-radius: 5px;
+			margin: 0.5rem 1.5rem;
+			&.clicked {
+				background-color: darkgrey;
+			}
 		}
 	}
+	.projects {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.card {
+		width: 300px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 250px 30px 250px 50px;
+		grid-template-areas: "image" "title" "text" "buttons";
 
-	.card-image {
-		grid-area: image;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
+		border-radius: 18px;
+		background-color: darkgrey;
+		font-family: roboto;
+		text-align: center;
 
-		img {
+		cursor: pointer;
+		margin: 50px;
+
+		.card-header {
+			grid-area: title;
+
+			h5 {
+				color: black;
+				margin: 0px;
+				padding: 10px;
+				font-size: 20px;
+			}
+		}
+
+		.card-image {
+			grid-area: image;
 			border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
+
+			img {
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.card-text {
+			grid-area: text;
+			background-color: darkgrey;
+
+			p {
+				color: rgb(0, 0, 2);
+				font-size: 15px;
+				font-weight: 300;
+				margin: 10px;
+				padding: 10px;
+			}
+		}
+
+		.card-buttons {
 			width: 100%;
 			height: 100%;
-		}
-	}
-
-	.card-text {
-		grid-area: text;
-		background-color: darkgrey;
-		p {
-			color: rgb(0, 0, 2);
-			font-size: 15px;
-			font-weight: 300;
-			margin: 10px;
-			padding: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			a {
+				width: 100%;
+				height: 100%;
+			}
+			button {
+				font-size: 1rem;
+				font-weight: bolder;
+				padding: auto;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				cursor: pointer;
+				background-color: rgb(80, 78, 78);
+				border: 2px solid rgb(80, 78, 78);
+			}
 		}
 	}
 }

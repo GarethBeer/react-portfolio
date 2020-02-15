@@ -1,16 +1,9 @@
 import React from "react";
 
-import PropTypes from "prop-types";
-
 const Skills = props => {
 	return (
 		<section className="skills">
 			<div className="container">
-				<div className="section-heading">
-					<h1>Skills</h1>
-					<h6>What I can do</h6>
-				</div>
-
 				<div className="my-skills">
 					<div className="skill html">
 						<div className="icon-container ">
