@@ -170,10 +170,3 @@ ul {
 	width: 90%;
 	height: 90%;
 }
-
-@media screen and (max-width: 800px) {
-	h6 {
-		transform: rotate(360deg);
-		transition: transform 1s ease-in;
-	}
-}

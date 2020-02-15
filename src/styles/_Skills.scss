@@ -137,137 +137,189 @@
 
 @keyframes spincss {
 	0% {
-		transform: rotate(-45deg);
+		transform: rotate(45deg);
 		color: #3596d0;
 	}
 
 	25% {
-		transform: rotate(-90deg);
+		transform: rotate(90deg);
 		color: #3596d0;
 	}
 
 	50% {
-		transform: rotate(-180deg);
+		transform: rotate(180deg);
 		color: #3596d0;
 	}
 
 	75% {
-		transform: rotate(-270deg);
+		transform: rotate(270deg);
 		color: #3596d0;
 	}
 
 	100% {
-		transform: rotate(-405deg);
+		transform: rotate(315deg);
 		color: #3596d0;
 	}
 }
 @keyframes spinhtml {
 	0% {
-		transform: rotate(-45deg);
+		transform: rotate(45deg);
 		color: #e44c27;
 	}
 	25% {
-		transform: rotate(-90deg);
+		transform: rotate(90deg);
 		color: #e44c27;
 	}
 	50% {
-		transform: rotate(-180deg);
+		transform: rotate(180deg);
 		color: #e44c27;
 	}
 	75% {
-		transform: rotate(-270deg);
+		transform: rotate(270deg);
 		color: #e44c27;
 	}
 	100% {
-		transform: rotate(-405deg);
+		transform: rotate(315deg);
 		color: #e44c27;
 	}
 }
 @keyframes spinsass {
 	0% {
-		transform: rotate(-45deg);
+		transform: rotate(45deg);
 		color: #cf649a;
 	}
 	25% {
-		transform: rotate(-90deg);
+		transform: rotate(90deg);
 		color: #cf649a;
 	}
 	50% {
-		transform: rotate(-180deg);
+		transform: rotate(180deg);
 		color: #cf649a;
 	}
 	75% {
-		transform: rotate(-270deg);
+		transform: rotate(270deg);
 		color: #cf649a;
 	}
 	100% {
-		transform: rotate(-405deg);
+		transform: rotate(315deg);
 		color: #cf649a;
 	}
 }
 @keyframes spinjs {
 	0% {
-		transform: rotate(-45deg);
+		transform: rotate(45deg);
 		color: #f7df1f;
 	}
 	25% {
-		transform: rotate(-90deg);
+		transform: rotate(90deg);
 		color: #f7df1f;
 	}
 	50% {
-		transform: rotate(-180deg);
+		transform: rotate(180deg);
 		color: #f7df1f;
 	}
 	75% {
-		transform: rotate(-270deg);
+		transform: rotate(270deg);
 		color: #f7df1f;
 	}
 	100% {
-		transform: rotate(-405deg);
+		transform: rotate(315deg);
 		color: #f7df1f;
 	}
 }
 @keyframes spinnode {
 	0% {
-		transform: rotate(-45deg);
+		transform: rotate(45deg);
 		color: #72a861;
 	}
 	25% {
-		transform: rotate(-90deg);
+		transform: rotate(90deg);
 		color: #72a861;
 	}
 	50% {
-		transform: rotate(-180deg);
+		transform: rotate(180deg);
 		color: #72a861;
 	}
 	75% {
-		transform: rotate(-270deg);
+		transform: rotate(270deg);
 		color: #72a861;
 	}
 	100% {
-		transform: rotate(-405deg);
+		transform: rotate(315deg);
 		color: #72a861;
 	}
 }
 @keyframes spinreact {
 	0% {
-		transform: rotate(-45deg);
+		transform: rotate(45deg);
 		color: #04d8ff;
 	}
 	25% {
-		transform: rotate(-90deg);
+		transform: rotate(90deg);
 		color: #04d8ff;
 	}
 	50% {
-		transform: rotate(-180deg);
+		transform: rotate(180deg);
 		color: #04d8ff;
 	}
 	75% {
-		transform: rotate(-270deg);
+		transform: rotate(270deg);
 		color: #04d8ff;
 	}
 	100% {
-		transform: rotate(-405deg);
+		transform: rotate(315deg);
 		color: #04d8ff;
+	}
+}
+
+@media screen and (max-width: 788px) {
+	.skill.html {
+		span {
+			color: #e44c27;
+		}
+		.icon-container {
+			border: 4px solid #e44c27;
+		}
+	}
+
+	.skill.css {
+		span {
+			color: #3596d0;
+		}
+		.icon-container {
+			border: 4px solid #3596d0;
+		}
+	}
+	.skill.js {
+		span {
+			color: #f7df1f;
+		}
+		.icon-container {
+			border: 4px solid #f7df1f;
+		}
+	}
+	.skill.sass {
+		span {
+			color: #cf649a;
+		}
+		.icon-container {
+			border: 4px solid #cf649a;
+		}
+	}
+	.skill.react {
+		span {
+			color: #04d8ff;
+		}
+		.icon-container {
+			border: 4px solid #04d8ff;
+		}
+	}
+	.skill.node {
+		span {
+			color: #72a861;
+		}
+		.icon-container {
+			border: 4px solid #72a861;
+		}
 	}
 }
