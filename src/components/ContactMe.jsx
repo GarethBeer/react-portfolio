@@ -22,7 +22,7 @@ const ContactMe = () => {
 							Feel free to take a look at my instagram however you will see a
 							lot of this
 							{"  "}
-							<i class="fas fa-arrow-right"></i>
+							<i className="fas fa-arrow-right"></i>
 						</h4>
 					</div>
 					<div className="contactLinks">
@@ -35,9 +35,9 @@ const ContactMe = () => {
 							<span className="fab fa-linkedin-in"></span>
 						</a>
 						<h4>
-							However to take a look at my work life head over to my Linkedin
-							account or to contact me about any work send me a message below or
-							on Linkinedin
+							If you want to take a look at my work life head over to my
+							Linkedin account or to contact me about any work send me a message
+							below or on Linkinedin
 						</h4>
 					</div>
 				</div>
