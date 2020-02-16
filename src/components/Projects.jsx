@@ -142,10 +142,9 @@ const Projects = props => {
 					<div className="card-text">
 						<p>
 							This Project was part of my time at Manchester Codes. The task was
-							to create a real estate website using react which allows a user to
-							log in with their facebook account and view properties and save
-							their favourites. The user can also add properties to the
-							database.
+							to build a Music Library API. It stores information about artists,
+							albums and songs. It implements a CRUD REST API to interact with a
+							MongoDB database.
 						</p>
 					</div>
 					<div className="card-buttons">
@@ -156,11 +155,7 @@ const Projects = props => {
 						>
 							<button>GitHub</button>
 						</a>
-						<a
-							href="https://github.com/GarethBeer/React--surrreal-estate"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href="#" target="_blank" rel="noopener noreferrer">
 							<button>Live Demo</button>
 						</a>
 					</div>
@@ -169,21 +164,20 @@ const Projects = props => {
 					<div className="card-image">
 						<img
 							src="https://angelusnews.com/system/images/W1siZiIsIjIwMTkvMDQvMjkvNm05cnU2cnp0el9Cb29rX2NvbGxlY3Rpb24uanBnIl0sWyJwIiwidGh1bWIiLCIxNDAweCJdXQ/image.jpg"
-							alt="music collection"
+							alt="book collection"
 						/>
 					</div>
 					<div className="card-header">
-						<h5>Music-API</h5>
+						<h5>Library-API</h5>
 					</div>
 					<div className="card-text">
 						<p>
 							This Project was part of my time at Manchester Codes. The task was
-							to create a real estate website using react which allows a user to
-							log in with their facebook account and view properties and save
-							their favourites. The user can also add properties to the
-							database.
+							to build a Library API. It allows users to create accounts, list
+							books and request to loan other users books.
 						</p>
 					</div>
+
 					<div className="card-buttons">
 						<a
 							href="https://github.com/GarethBeer/library-api"
