@@ -43,24 +43,42 @@ const ContactMe = () => {
 				</div>
 
 				<div className="image-gallery">
-					<img
-						src="https://oi350.photobucket.com/albums/q408/garethbeer1989/hiking-10_zpsbhwe5oui.jpg"
-						alt="mountain"
-						className="image-1"
-					/>
-					<img
-						src="https://oi350.photobucket.com/albums/q408/garethbeer1989/hiking-3_zps0aur2sao.jpg"
-						alt="group on mountain"
-						className="image-2"
-					/>
-
-					<img
-						src="https://oi350.photobucket.com/albums/q408/garethbeer1989/hiking-9_zpspgiootob.jpg"
-						alt="mountain"
-						className="image-3"
-					/>
+					<div className="picture">
+						<img
+							src="https://oi350.photobucket.com/albums/q408/garethbeer1989/hiking-10_zpsbhwe5oui.jpg"
+							alt="mountain"
+							className="pic-1"
+						/>
+						<h4 className="text-1">
+							<span className="fas fa-map-marked-alt"></span>
+							{"  "}Hellvelyn - Lake District 19'
+						</h4>
+					</div>
+					<div className="picture">
+						<img
+							src="https://oi350.photobucket.com/albums/q408/garethbeer1989/hiking-3_zps0aur2sao.jpg"
+							alt="group on mountain"
+							className="pic-1"
+						/>
+						<h4 className="text-1">
+							<span className="fas fa-map-marked-alt"></span>
+							{"  "}Hellvelyn - Lake District 19'
+						</h4>
+					</div>
+					<div className="picture">
+						<img
+							src="https://oi350.photobucket.com/albums/q408/garethbeer1989/hiking-9_zpspgiootob.jpg"
+							alt="mountain"
+							className="pic-1"
+						/>
+						<h4 className="text-1">
+							<span className="fas fa-map-marked-alt"></span>
+							{"  "}Hellvelyn - Lake District 19'
+						</h4>
+					</div>
 				</div>
 			</div>
+
 			<form action="Submit" className="form">
 				<div className="detailsContainer">
 					<h2>Send me an Email ...</h2>

@@ -3,24 +3,49 @@
 	justify-content: space-evenly;
 	align-items: center;
 	height: 8vh;
+	z-index: 5;
 }
 
 .logo {
 	color: red;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	font-weight: 500;
+	position: absolute;
+	left: 2%;
+	top: 0%;
+	width: 230px;
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+
+	h4 {
+		font-size: 15px;
+		text-align: center;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		margin-bottom: 1px;
+	}
+	p {
+		font-size: 11px;
+		margin: 0;
+		text-align: center;
+	}
 }
 
 .navlinks {
 	display: flex;
 	justify-content: space-evenly;
+	align-items: flex-end;
 	width: 40%;
+	margin: 0;
+
+	height: 100%;
 }
 .links {
+	padding: 20px 0;
 	cursor: pointer;
+	align-self: center;
 	&:hover {
 		color: red;
+		border-bottom: 3px solid red;
 	}
 }
 

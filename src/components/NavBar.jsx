@@ -18,12 +18,16 @@ class Navbar extends Component {
 			});
 		}
 	};
-	logo = "{Gareth Dev}";
+
 	render() {
 		const { sideBar } = this.state;
 		return (
 			<nav className="nav-container">
-				<div className="logo">{this.logo}</div>
+				<div className="logo">
+					<h4>Gareth Beer </h4>
+					<p>Software Developer. </p>
+					<p>Design. Implement. Return.</p>
+				</div>
 				<ul className={`navlinks ${sideBar ? "active" : ""}`}>
 					<Link to="/" className="links" onClick={this.handleNavBar}>
 						About
