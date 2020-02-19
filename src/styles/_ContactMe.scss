@@ -215,3 +215,70 @@
 		}
 	}
 }
+@media only screen and (max-width: 768px) {
+	.contactMeContainer {
+		.contactText {
+			display: flex;
+			flex-direction: column;
+			.social-media {
+				width: 100%;
+				.contactLinks {
+					h4 {
+						font-size: 0.8rem;
+					}
+					.icon-link {
+						span {
+							font-size: 3rem;
+						}
+					}
+				}
+			}
+			.image-gallery {
+				.picture {
+					width: 150px;
+					display: grid;
+					grid-template-columns: 1fr;
+					grid-template-rows: 150px 30px;
+					grid-template-areas: "images" "text";
+					gap: 0px;
+					margin-bottom: 2px;
+					margin: 20px;
+				}
+				.picture.one {
+					.pic-1 {
+						width: 175px;
+					}
+					.text-1 {
+						width: 175px;
+						opacity: 1;
+					}
+				}
+				.picture.two {
+					.pic-2 {
+						width: 175px;
+					}
+					.text-2 {
+						width: 175px;
+						opacity: 1;
+					}
+				}
+				.picture.three {
+					.pic-3 {
+						width: 175px;
+					}
+					.text-3 {
+						width: 175px;
+						opacity: 1;
+					}
+				}
+				img {
+					width: 130px;
+					height: 130px;
+				}
+			}
+		}
+	}
+	.form {
+		padding: 5px;
+	}
+}

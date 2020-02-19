@@ -3,9 +3,9 @@
 		content: "";
 		position: absolute;
 		left: 2%;
-		top: 2%;
+		top: 2.44%;
 		height: 5px;
-		width: 400px;
+		width: 20rem;
 		background-color: rgba(255, 255, 255, 0.459);
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
@@ -14,9 +14,9 @@
 		content: "";
 		position: absolute;
 		right: 2%;
-		bottom: 2%;
+		bottom: 2.44%;
 		height: 5px;
-		width: 400px;
+		width: 20rem;
 		background-color: rgba(255, 255, 255, 0.459);
 		border-top-left-radius: 10px;
 		border-bottom-left-radius: 10px;
@@ -27,7 +27,7 @@
 			position: absolute;
 			left: 2%;
 			top: 2.44%;
-			height: 400px;
+			height: 20rem;
 			width: 5px;
 			background-color: rgba(255, 255, 255, 0.459);
 			border-bottom-left-radius: 10px;
@@ -38,7 +38,7 @@
 			position: absolute;
 			right: 2%;
 			bottom: 2.44%;
-			height: 400px;
+			height: 20rem;
 			width: 5px;
 			background-color: rgba(255, 255, 255, 0.459);
 
@@ -105,9 +105,9 @@
 		}
 	}
 	.navigationContainer {
-		background-color: rgba(169, 169, 169, 0.411);
+		/* background-color: rgba(169, 169, 169, 0.411); */
 		border-radius: 10px;
-		border: 2px solid whitesmoke;
+		/* border: 2px solid whitesmoke; */
 		width: 60%;
 		margin: auto;
 		.navigation-links {
@@ -119,6 +119,51 @@
 					border-bottom: none;
 					color: whitesmoke;
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.landing-page {
+		&:before {
+			width: 10rem;
+			border-top-left-radius: 10px;
+		}
+		&:after {
+			width: 10rem;
+			border-bottom-right-radius: 10px;
+		}
+		.second-border {
+			&:before {
+				height: 8rem;
+				border-top-left-radius: 10px;
+			}
+			&:after {
+				height: 8rem;
+				border-bottom-right-radius: 10px;
+			}
+		}
+		.landing-text {
+			h1 {
+				margin: 0;
+			}
+			h5 {
+				text-align: center;
+				margin: 0;
+				font-size: 1rem;
+			}
+			h6 {
+				text-align: center;
+				font-size: 0.8rem;
+			}
+		}
+
+		.navigationContainer {
+			width: 90%;
+			height: auto;
+			ul {
+				padding: 3px;
 			}
 		}
 	}

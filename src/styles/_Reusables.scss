@@ -13,12 +13,9 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	width: 100vw;
+	min-width: 100vw;
+	min-height: 100vh;
 
-	html {
-		width: 100%;
-		height: 100%;
-	}
 	section {
 		padding: 6rem 2rem;
 	}

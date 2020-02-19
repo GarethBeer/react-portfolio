@@ -1,11 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/_ContactMe.scss";
 import NavBar from "./NavBar";
 import Climbing from "../styles/images/Climbing.jpeg";
 import Hellvelyn from "../styles/images/Hellvellyn.jpg";
 import Lake from "../styles/images/lake.JPG";
+import axios from "axios";
 
 const ContactMe = () => {
+	const [state, setState] = useState({
+		name: "",
+		email: "",
+		message: ""
+	});
+	const resetForm = () => {
+		setState({
+			name: "",
+			email: "",
+			message: ""
+		});
+	};
+	const onSubmit = e => {
+		e.preventDefault();
+
+		axios({
+			method: "POST",
+			url: "http://localhost:3002/send",
+			data: state
+		}).then(response => {
+			if (response.data.status === "success") {
+				alert("Message Sent");
+				resetForm();
+			} else if (response.data.status === "fail") {
+				alert("message failed to send.");
+			}
+		});
+	};
 	return (
 		<div>
 			<NavBar />
@@ -73,21 +102,51 @@ const ContactMe = () => {
 					</div>
 				</div>
 
-				<form action="Submit" className="form">
+				<form className="form" onSubmit={onSubmit} method="POST">
 					<div className="detailsContainer">
 						<h2>Send me an Email ...</h2>
 						<label htmlFor="name">Your Name</label>
-						<input type="text" className="name" required />
+						<input
+							value={state.name}
+							type="text"
+							className="name"
+							onChange={e =>
+								setState({
+									...state,
+									name: e.target.value
+								})
+							}
+							required
+						/>
 						<label htmlFor="email">Your Email Address</label>
-						<input type="email" name="email" className="email" required />
+						<input
+							type="email"
+							value={state.email}
+							name="email"
+							className="email"
+							onChange={e =>
+								setState({
+									...state,
+									email: e.target.value
+								})
+							}
+							required
+						/>
 					</div>
 					<div className="messageContainer">
 						<label htmlFor="message">Your Message</label>
 						<textarea
+							value={state.message}
 							name="message"
 							cols="30"
 							rows="10"
 							className="message"
+							onChange={e =>
+								setState({
+									...state,
+									message: e.target.value
+								})
+							}
 							required
 						></textarea>
 						<button type="submit">Send</button>

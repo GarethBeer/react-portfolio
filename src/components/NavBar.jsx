@@ -9,7 +9,6 @@ const Navbar = props => {
 			<Link to="/" className="logo" onClick={handleNavBar}>
 				<h4>Gareth Beer </h4>
 				<p>Software Developer. </p>
-				<p>Design. Implement. Return.</p>
 			</Link>
 			<ul className={`navlinks ${sideBar ? "active" : ""}`}>
 				<Link to="/About" className="links" onClick={handleNavBar}>

@@ -56,7 +56,7 @@
 .line1 {
 	width: 30px;
 	height: 5px;
-	background-color: rgb(221, 3, 3);
+	background-color: whitesmoke;
 	margin: 2px;
 	border-radius: 10px;
 	transition: transform 0.7s ease-in;
@@ -64,7 +64,7 @@
 .line2 {
 	width: 15px;
 	height: 5px;
-	background-color: rgb(219, 1, 1);
+	background-color: whitesmoke;
 	margin: 2px;
 	border-radius: 10px;
 	transition: transform 0.7s ease-in;
@@ -72,7 +72,7 @@
 .line3 {
 	width: 30px;
 	height: 5px;
-	background-color: rgb(224, 1, 1);
+	background-color: whitesmoke;
 	margin: 2px;
 	border-radius: 10px;
 	transition: transform 0.7s ease-in;
@@ -82,6 +82,20 @@
 	body {
 		overflow-x: hidden;
 	}
+	.nav-container {
+		display: flex;
+		justify-content: flex-end;
+		.logo {
+			h4 {
+				font-size: 0.5rem;
+			}
+			p {
+				font-size: 0.5rem;
+			}
+			width: 100px;
+			height: 60px;
+		}
+	}
 	.burger {
 		width: 50px;
 		height: 50px;
@@ -89,6 +103,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		z-index: 3;
 	}
 
 	.navlinks {
@@ -100,7 +115,7 @@
 		flex-direction: column;
 		width: 50%;
 		align-items: center;
-		background-color: black;
+		background-color: #1d4658;
 		transform: translateX(100%);
 		transition: transform 2s ease-out;
 		z-index: 1;

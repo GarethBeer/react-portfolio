@@ -108,3 +108,12 @@
 		}
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.project-page {
+		.card {
+			width: 100%;
+			margin: 50px 0;
+		}
+	}
+}
