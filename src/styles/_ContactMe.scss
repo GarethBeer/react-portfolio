@@ -18,49 +18,130 @@
 			align-items: center;
 			h4 {
 				padding-left: 50px;
+				line-height: 24px;
 			}
 		}
 	}
 	.image-gallery {
 		margin-left: 2rem;
-
+		width: 60%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
 		img {
 			width: 250px;
 			height: 250px;
 			margin-right: 2px;
-			border: 5px solid white;
+			border: 7px solid white;
 			border-bottom: 60px solid white;
 		}
-		.image-1 {
+		.picture.one {
+			transition: ease-in 700ms;
 			transform: rotate(35deg);
-			transition: ease-in 700ms;
-
 			&:hover {
-				transform: rotate(10deg);
 				transition: ease-in 700ms;
+				transform: rotate(10deg);
+			}
+			.pic-1 {
+				border: 2px 2px 2px 2px solid white;
+				width: 270px;
+			}
+			.text-1 {
+				margin: 0;
+				text-align: center;
+				font-family: "Permanent Marker", cursive;
+				font-size: 15px;
+				background-color: white;
+				color: black;
+				width: 275px;
+				height: 12px;
+				padding: 0;
+				opacity: 0;
+				transition: ease-in 900ms;
+			}
+			&:hover {
+				.text-1 {
+					opacity: 1;
+					transition: ease-in 900ms;
+					transition-delay: 300ms;
+				}
+			}
+		}
+		.picture.two {
+			transition: ease-in 700ms;
+			transform: rotate(15deg);
+			z-index: 4;
+			&:hover {
+				transition: ease-in 700ms;
+				transform: rotate(5deg);
+			}
+			.pic-2 {
+				border: 2px 2px 2px 2px solid white;
+				width: 270px;
+			}
+			.text-2 {
+				margin: 0;
+				text-align: center;
+				font-family: "Permanent Marker", cursive;
+				font-size: 15px;
+				background-color: white;
+				color: black;
+				width: 275px;
+				height: 12px;
+				padding: 0;
+				opacity: 0;
+				transition: ease-in 900ms;
+			}
+			&:hover {
+				.text-2 {
+					opacity: 1;
+					transition: ease-in 900ms;
+					transition-delay: 200ms;
+				}
 			}
 		}
 
-		.image-2 {
-			position: relative;
-			transition: ease-in 700ms;
-			transform: rotate(0deg);
-			&:hover {
-				z-index: 1;
-				transform: rotate(10deg);
-				transition: ease-in 700ms;
-			}
-		}
-
-		.image-3 {
+		.picture.three {
 			transform: rotate(-45deg);
 			transition: ease-in 700ms;
-			position: relative;
-
 			&:hover {
-				transform: rotate(0deg);
 				transition: ease-in 700ms;
+				transform: rotate(15deg);
 			}
+			.pic-3 {
+				border: 2px 2px 2px 2px solid white;
+				width: 270px;
+			}
+			.text-3 {
+				margin: 0;
+				text-align: center;
+				font-family: "Permanent Marker", cursive;
+				font-size: 15px;
+				background-color: white;
+				color: black;
+				width: 275px;
+				height: 12px;
+				padding: 0;
+				opacity: 0;
+				transition: ease-in 900ms;
+			}
+			&:hover {
+				.text-3 {
+					opacity: 1;
+					transition: ease-in 900ms;
+					transition-delay: 200ms;
+				}
+			}
+		}
+		.picture {
+			width: 275px;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 270px 50px;
+			grid-template-areas: "images" "text";
+			gap: 0px;
+			margin-bottom: 2px;
+			margin: 20px;
 		}
 	}
 	color: white;
@@ -76,7 +157,7 @@
 		padding: 1rem, 0rem;
 		margin: 50px 0px 0px;
 		background-image: url("https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-		height: 300px;
+		height: 250px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -125,43 +206,12 @@
 		label {
 			padding: 10px;
 		}
-	}
-
-	.picture {
-		width: 275px;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 270px 50px;
-		grid-template-areas: "images" "text";
-		gap: 0px;
-		margin-bottom: 2px;
-		transition: ease-in 700ms;
-		transform: rotate(35deg);
-		.pic-1 {
-			border: 2px 2px 2px 2px solid white;
-			width: 270px;
-		}
-		.text-1 {
-			margin: 0;
-			text-align: center;
-			font-family: "Permanent Marker", cursive;
-			font-size: 15px;
-			background-color: white;
-			color: black;
-			width: 275px;
-			height: 12px;
-			padding: 0;
-			opacity: 0;
-			transition: ease-in 900ms;
-		}
-		&:hover {
-			.text-1 {
-				opacity: 1;
-				transition: ease-in 900ms;
-				transition-delay: 200ms;
-			}
-			transition: ease-in 700ms;
-			transform: rotate(0deg);
+		button {
+			width: 20%;
+			font-family: "Permanent Marker";
+			border-radius: 10px;
+			background-color: black;
+			color: whitesmoke;
 		}
 	}
 }

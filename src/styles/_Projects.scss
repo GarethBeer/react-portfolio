@@ -1,6 +1,6 @@
 .project-page {
 	padding: 1rem 2rem;
-	background-color: black;
+	min-height: 100vh;
 
 	.projects-tab {
 		display: flex;
@@ -8,6 +8,7 @@
 		align-items: center;
 		background-color: rgba(169, 169, 169, 0.411);
 		border-radius: 10px;
+		border: 2px solid whitesmoke;
 		button {
 			width: 5rem;
 			height: 2rem;
@@ -31,9 +32,8 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 250px 30px 170px 50px;
 		grid-template-areas: "image" "title" "text" "buttons";
+		border: 2px solid whitesmoke;
 
-		border-radius: 18px;
-		background-color: darkgrey;
 		font-family: roboto;
 		text-align: center;
 
@@ -42,7 +42,7 @@
 
 		.card-header {
 			grid-area: title;
-
+			background-color: rgba(255, 255, 255, 0.664);
 			h5 {
 				color: black;
 				margin: 0px;
@@ -66,7 +66,7 @@
 
 		.card-text {
 			grid-area: text;
-			background-color: darkgrey;
+			background-color: rgba(255, 255, 255, 0.664);
 
 			p {
 				color: rgb(0, 0, 2);
@@ -102,7 +102,7 @@
 				background-color: rgb(80, 78, 78);
 				border: 2px solid rgb(80, 78, 78);
 				&:hover {
-					color: red;
+					color: whitesmoke;
 				}
 			}
 		}

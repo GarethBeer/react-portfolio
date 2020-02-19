@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import Navbar from "./NavBar";
+import DiceGame from "../styles/images/DiceGame.PNG";
+import WeatherApp from "../styles/images/WeatherApp.PNG";
+import SurrealEstate from "../styles/images/SurrealEstate.PNG";
 
 const Projects = props => {
 	const [state, setButtons] = useState({
@@ -15,10 +19,7 @@ const Projects = props => {
 			<div className="projects">
 				<div className="card">
 					<div className="card-image">
-						<img
-							src="https://oi350.photobucket.com/albums/q408/garethbeer1989/diceGame_zps4jlktclu.png"
-							alt="dice-game"
-						/>
+						<img src={DiceGame} alt="dice-game" />
 					</div>
 					<div className="card-header">
 						<h5>Dice Game</h5>
@@ -52,10 +53,7 @@ const Projects = props => {
 				</div>
 				<div className="card">
 					<div className="card-image">
-						<img
-							src="https://oi350.photobucket.com/albums/q408/garethbeer1989/Screenshot%202020-02-15%20at%2021.47.18_zpspxhagdty.png"
-							alt="surreal estates"
-						/>
+						<img src={SurrealEstate} alt="surreal estates" />
 					</div>
 					<div className="card-header">
 						<h5>Surreal Estates</h5>
@@ -88,10 +86,7 @@ const Projects = props => {
 				</div>
 				<div className="card">
 					<div className="card-image">
-						<img
-							src="https://oi350.photobucket.com/albums/q408/garethbeer1989/Screenshot%202020-02-15%20at%2022.32.59_zps2pvjn19j.png"
-							alt="Weather App"
-						/>
+						<img src={WeatherApp} alt="Weather App" />
 					</div>
 					<div className="card-header">
 						<h5>Weather App</h5>
@@ -199,38 +194,41 @@ const Projects = props => {
 		);
 	} //
 	return (
-		<section className="project-page">
-			<div className="projects-tab">
-				<button
-					onClick={() =>
-						setButtons({
-							active: "frontEnd",
-							Fstyle: "clicked",
-							Bstyle: ""
-						})
-					}
-					className={state.Fstyle}
-				>
-					FrontEnd
-				</button>
-				<button
-					onClick={() =>
-						setButtons({
-							active: "backEnd",
-							Fstyle: "",
-							Bstyle: "clicked"
-						})
-					}
-					className={state.Bstyle}
-				>
-					BackEnd
-				</button>
-			</div>
-			<div>
-				<div>{frontEnd}</div>
-				<div>{backEnd}</div>
-			</div>
-		</section>
+		<div>
+			<Navbar />
+			<section className="project-page">
+				<div className="projects-tab">
+					<button
+						onClick={() =>
+							setButtons({
+								active: "frontEnd",
+								Fstyle: "clicked",
+								Bstyle: ""
+							})
+						}
+						className={state.Fstyle}
+					>
+						FrontEnd
+					</button>
+					<button
+						onClick={() =>
+							setButtons({
+								active: "backEnd",
+								Fstyle: "",
+								Bstyle: "clicked"
+							})
+						}
+						className={state.Bstyle}
+					>
+						BackEnd
+					</button>
+				</div>
+				<div>
+					<div>{frontEnd}</div>
+					<div>{backEnd}</div>
+				</div>
+			</section>
+		</div>
 	);
 };
 

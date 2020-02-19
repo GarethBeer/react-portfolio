@@ -7,7 +7,7 @@
 }
 
 .logo {
-	color: red;
+	color: whitesmoke;
 	position: absolute;
 	left: 2%;
 	top: 0%;
@@ -44,8 +44,8 @@
 	cursor: pointer;
 	align-self: center;
 	&:hover {
-		color: red;
-		border-bottom: 3px solid red;
+		color: whitesmoke;
+		border-bottom: 3px solid whitesmoke;
 	}
 }
 
@@ -93,7 +93,7 @@
 
 	.navlinks {
 		position: absolute;
-		height: 92vh;
+		height: 98vh;
 		top: 6vh;
 		right: 0px;
 		display: flex;

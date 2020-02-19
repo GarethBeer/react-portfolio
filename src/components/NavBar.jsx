@@ -1,56 +1,38 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/_NavBar.scss";
 
-class Navbar extends Component {
-	state = {
-		sideBar: false
-	};
+const Navbar = props => {
+	const { sideBar, handleNavBar } = props;
+	return (
+		<nav className="nav-container">
+			<Link to="/" className="logo" onClick={handleNavBar}>
+				<h4>Gareth Beer </h4>
+				<p>Software Developer. </p>
+				<p>Design. Implement. Return.</p>
+			</Link>
+			<ul className={`navlinks ${sideBar ? "active" : ""}`}>
+				<Link to="/About" className="links" onClick={handleNavBar}>
+					About
+				</Link>
+				<Link to="/Skills" className="links" onClick={handleNavBar}>
+					Skills
+				</Link>
+				<Link to="/Projects" className="links" onClick={handleNavBar}>
+					Projects
+				</Link>
 
-	handleNavBar = () => {
-		if (this.state.sideBar) {
-			this.setState({
-				sideBar: false
-			});
-		} else {
-			this.setState({
-				sideBar: true
-			});
-		}
-	};
-
-	render() {
-		const { sideBar } = this.state;
-		return (
-			<nav className="nav-container">
-				<div className="logo">
-					<h4>Gareth Beer </h4>
-					<p>Software Developer. </p>
-					<p>Design. Implement. Return.</p>
-				</div>
-				<ul className={`navlinks ${sideBar ? "active" : ""}`}>
-					<Link to="/" className="links" onClick={this.handleNavBar}>
-						About
-					</Link>
-					<Link to="/Skills" className="links" onClick={this.handleNavBar}>
-						Skills
-					</Link>
-					<Link to="/Projects" className="links" onClick={this.handleNavBar}>
-						Projects
-					</Link>
-
-					<Link to="/ContactMe" className="links" onClick={this.handleNavBar}>
-						Contact Me
-					</Link>
-				</ul>
-				<div className="burger" onClick={this.handleNavBar}>
-					<div className={`line1 ${sideBar ? "active" : ""}`}></div>
-					<div className={`line2 ${sideBar ? "active" : ""}`}></div>
-					<div className={`line3 ${sideBar ? "active" : ""}`}></div>
-				</div>
-			</nav>
-		);
-	}
-}
+				<Link to="/ContactMe" className="links" onClick={handleNavBar}>
+					Contact Me
+				</Link>
+			</ul>
+			<div className="burger" onClick={handleNavBar}>
+				<div className={`line1 ${sideBar ? "active" : ""}`}></div>
+				<div className={`line2 ${sideBar ? "active" : ""}`}></div>
+				<div className={`line3 ${sideBar ? "active" : ""}`}></div>
+			</div>
+		</nav>
+	);
+};
 
 export default Navbar;
