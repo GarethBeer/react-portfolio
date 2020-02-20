@@ -150,7 +150,11 @@ const Projects = props => {
 						>
 							<button>GitHub</button>
 						</a>
-						<a href="#" target="_blank" rel="noopener noreferrer">
+						<a
+							href="https://github.com/GarethBeer/music-api"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<button>Live Demo</button>
 						</a>
 					</div>

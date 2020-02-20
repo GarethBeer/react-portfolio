@@ -3,7 +3,7 @@
 		content: "";
 		position: absolute;
 		left: 2%;
-		top: 2.44%;
+		top: 2%;
 		height: 5px;
 		width: 20rem;
 		background-color: rgba(255, 255, 255, 0.459);
@@ -14,7 +14,7 @@
 		content: "";
 		position: absolute;
 		right: 2%;
-		bottom: 2.44%;
+		bottom: 2%;
 		height: 5px;
 		width: 20rem;
 		background-color: rgba(255, 255, 255, 0.459);
@@ -127,21 +127,26 @@
 @media screen and (max-width: 768px) {
 	.landing-page {
 		&:before {
+			top: 1.5%;
+			left: 3%;
 			width: 10rem;
-			border-top-left-radius: 10px;
 		}
 		&:after {
+			bottom: 2.2%;
+			right: 3%;
 			width: 10rem;
 			border-bottom-right-radius: 10px;
 		}
 		.second-border {
 			&:before {
+				top: 2.2%;
+				left: 3%;
 				height: 8rem;
-				border-top-left-radius: 10px;
 			}
 			&:after {
+				bottom: 2.95%;
+				right: 3%;
 				height: 8rem;
-				border-bottom-right-radius: 10px;
 			}
 		}
 		.landing-text {
