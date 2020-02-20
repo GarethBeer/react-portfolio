@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/_NavBar.scss";
 
 const Navbar = props => {
-	const { sideBar, handleNavBar } = props;
+	const [sideBar, setSideBar] = useState(false);
+
+	const handleNavBar = () => {
+		if (sideBar) {
+			setSideBar(false);
+		} else {
+			setSideBar(true);
+		}
+	};
+
 	return (
 		<nav className="nav-container">
 			<Link to="/" className="logo" onClick={handleNavBar}>

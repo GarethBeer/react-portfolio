@@ -3,25 +3,10 @@ import NavBar from "./NavBar";
 import Hotham from "../styles/images/hotham.JPG";
 
 class AboutMe extends Component {
-	state = {
-		sideBar: false
-	};
-
-	handleNavBar = () => {
-		if (this.state.sideBar) {
-			this.setState({
-				sideBar: false
-			});
-		} else {
-			this.setState({
-				sideBar: true
-			});
-		}
-	};
 	render() {
 		return (
 			<div>
-				<NavBar handleNavBar={this.handleNavBar} sideBar={this.state.sideBar} />
+				<NavBar />
 				<section className="aboutMeContainer">
 					<div className="about-container">
 						<div className="profile-img">
