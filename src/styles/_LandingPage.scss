@@ -76,6 +76,7 @@
 			);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+			margin: 2px;
 			&:hover {
 				background: linear-gradient(
 					rgba(253, 253, 253, 0.721),
@@ -127,26 +128,17 @@
 @media screen and (max-width: 768px) {
 	.landing-page {
 		&:before {
-			top: 1.5%;
-			left: 3%;
-			width: 10rem;
+			display: none;
 		}
 		&:after {
-			bottom: 2.2%;
-			right: 3%;
-			width: 10rem;
-			border-bottom-right-radius: 10px;
+			display: none;
 		}
 		.second-border {
 			&:before {
-				top: 2.2%;
-				left: 3%;
-				height: 8rem;
+				display: none;
 			}
 			&:after {
-				bottom: 2.95%;
-				right: 3%;
-				height: 8rem;
+				display: none;
 			}
 		}
 		.landing-text {

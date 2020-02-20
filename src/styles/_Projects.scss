@@ -6,9 +6,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: rgba(169, 169, 169, 0.411);
-		border-radius: 10px;
-		border: 2px solid whitesmoke;
 		button {
 			width: 5rem;
 			height: 2rem;
@@ -32,7 +29,7 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 250px 30px 170px 50px;
 		grid-template-areas: "image" "title" "text" "buttons";
-		border: 2px solid whitesmoke;
+		border: 1px solid whitesmoke;
 
 		font-family: roboto;
 		text-align: center;
@@ -114,6 +111,8 @@
 		.card {
 			width: 100%;
 			margin: 50px 0;
+		}
+		.projects-tab {
 		}
 	}
 }

@@ -16,9 +16,13 @@
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
-			h4 {
+			p {
 				padding-left: 50px;
 				line-height: 24px;
+				font-size: 1rem;
+			}
+			span {
+				font-size: 50px;
 			}
 		}
 	}
@@ -207,7 +211,7 @@
 			padding: 10px;
 		}
 		button {
-			width: 20%;
+			width: 60px;
 			font-family: "Permanent Marker";
 			border-radius: 10px;
 			background-color: black;
@@ -220,15 +224,22 @@
 		.contactText {
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			.social-media {
 				width: 100%;
+				.socialMedia-title {
+					margin: auto;
+				}
+
 				.contactLinks {
 					h4 {
 						font-size: 0.8rem;
+						line-height: 1rem;
 					}
 					.icon-link {
 						span {
-							font-size: 3rem;
+							font-size: 3.2rem;
 						}
 					}
 				}
@@ -238,10 +249,10 @@
 					width: 150px;
 					display: grid;
 					grid-template-columns: 1fr;
-					grid-template-rows: 150px 30px;
+					grid-template-rows: 150px 50px;
 					grid-template-areas: "images" "text";
 					gap: 0px;
-					margin-bottom: 2px;
+
 					margin: 20px;
 				}
 				.picture.one {
@@ -249,8 +260,10 @@
 						width: 175px;
 					}
 					.text-1 {
-						width: 175px;
+						width: 187px;
 						opacity: 1;
+						background-color: white;
+						height: 50px;
 					}
 				}
 				.picture.two {
@@ -258,8 +271,10 @@
 						width: 175px;
 					}
 					.text-2 {
-						width: 175px;
+						width: 187px;
 						opacity: 1;
+						background-color: white;
+						height: 50px;
 					}
 				}
 				.picture.three {
@@ -267,8 +282,10 @@
 						width: 175px;
 					}
 					.text-3 {
-						width: 175px;
+						width: 187px;
 						opacity: 1;
+						background-color: white;
+						height: 50px;
 					}
 				}
 				img {

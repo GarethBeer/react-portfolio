@@ -41,8 +41,24 @@ const ContactMe = () => {
 			<div className="contactMeContainer">
 				<div className="contactText">
 					<div className="social-media">
-						<div>
+						<div className="socialMedia-title">
 							<h1>Contact Me</h1>
+						</div>
+
+						<div className="contactLinks">
+							<a
+								className="icon-link"
+								href="http://www.linkedin.com/in/garethbeerjs"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<span className="fab fa-linkedin-in"></span>
+							</a>
+							<p>
+								If you want to take a look at my work life head over to my
+								Linkedin account or to contact me about any work send me a
+								message below or on Linkinedin
+							</p>
 						</div>
 						<div className="contactLinks">
 							<a
@@ -53,37 +69,20 @@ const ContactMe = () => {
 							>
 								<span className="fab fa-instagram"></span>
 							</a>
-							<h4>
+							<p>
 								Feel free to take a look at my instagram however you will see a
-								lot of this
-								{"  "}
-								<i className="fas fa-arrow-right"></i>
-							</h4>
-						</div>
-						<div className="contactLinks">
-							<a
-								className="icon-link"
-								href="http://www.linkedin.com/in/garethbeerjs"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<span className="fab fa-linkedin-in"></span>
-							</a>
-							<h4>
-								If you want to take a look at my work life head over to my
-								Linkedin account or to contact me about any work send me a
-								message below or on Linkinedin
-							</h4>
+								lot of this...
+							</p>
 						</div>
 					</div>
 
 					<div className="image-gallery">
 						<div className="picture one">
 							<img src={Hellvelyn} alt="mountain" className="pic-1" />
-							<h4 className="text-1">
+							<p className="text-1">
 								<span className="fas fa-map-marked-alt"></span>
 								{"  "}Hellvelyn - Lake District 19'
-							</h4>
+							</p>
 						</div>
 						<div className="picture two">
 							<img src={Climbing} alt="climbing" className="pic-2" />
