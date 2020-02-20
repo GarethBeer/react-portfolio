@@ -42,13 +42,6 @@ const Projects = props => {
 						>
 							<button>GitHub</button>
 						</a>
-						<a
-							href="https://github.com/GarethBeer/React--surrreal-estate"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<button>Live Demo</button>
-						</a>
 					</div>
 				</div>
 				<div className="card">
@@ -74,13 +67,6 @@ const Projects = props => {
 							rel="noopener noreferrer"
 						>
 							<button>GitHub</button>
-						</a>
-						<a
-							href="https://github.com/GarethBeer/React--surrreal-estate"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<button>Live Demo</button>
 						</a>
 					</div>
 				</div>
@@ -108,13 +94,13 @@ const Projects = props => {
 						>
 							<button>GitHub</button>
 						</a>
-						<a
+						{/* <a
 							href="https://weather-app-xi.now.sh/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							<button>Live Demo</button>
-						</a>
+						</a> */}
 					</div>
 				</div>
 			</div>
@@ -150,13 +136,13 @@ const Projects = props => {
 						>
 							<button>GitHub</button>
 						</a>
-						<a
+						{/* <a
 							href="https://github.com/GarethBeer/music-api"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							<button>Live Demo</button>
-						</a>
+						</a> */}
 					</div>
 				</div>
 				<div className="card">
@@ -185,13 +171,13 @@ const Projects = props => {
 						>
 							<button>GitHub</button>
 						</a>
-						<a
+						{/* <a
 							href="https://github.com/GarethBeer/React--surrreal-estate"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							<button>Live Demo</button>
-						</a>
+						</a> */}
 					</div>
 				</div>
 			</div>

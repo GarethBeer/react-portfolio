@@ -24,7 +24,7 @@ const ContactMe = () => {
 
 		axios({
 			method: "POST",
-			url: "http://localhost:3002/send",
+			url: "https://localhost:3003/send",
 			data: state
 		}).then(response => {
 			if (response.data.status === "success") {
@@ -56,8 +56,8 @@ const ContactMe = () => {
 							</a>
 							<p>
 								If you want to take a look at my work life head over to my
-								Linkedin account or to contact me about any work send me a
-								message below or on Linkinedin
+								Linkedin account and feel free to contact me in regards to any
+								work opportunities.
 							</p>
 						</div>
 						<div className="contactLinks">
@@ -101,7 +101,7 @@ const ContactMe = () => {
 					</div>
 				</div>
 
-				<form className="form" onSubmit={onSubmit} method="POST">
+				{/* <form className="form" onSubmit={onSubmit} method="POST">
 					<div className="detailsContainer">
 						<h2>Send me an Email ...</h2>
 						<label htmlFor="name">Your Name</label>
@@ -150,7 +150,7 @@ const ContactMe = () => {
 						></textarea>
 						<button type="submit">Send</button>
 					</div>
-				</form>
+				</form> */}
 			</div>
 		</div>
 	);
