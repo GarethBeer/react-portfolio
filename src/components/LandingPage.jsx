@@ -2,13 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const LandingPage = () => {
+	console.log("hello");
 	return (
 		<div className="landing-page">
 			<div className="second-border">
 				<div className="landing-text">
-					<h1>Gareth Beer</h1>
-					<h5>Software Developer</h5>
-					<h6>Front-End and Back-End</h6>
+					<div className="typewriter">
+						<h4 className="role">Front end software developer</h4>
+
+						<h4 className="hobby">Adventurer</h4>
+
+						<h4 className="person">All round good guy</h4>
+					</div>
 				</div>
 				<nav className="navigationContainer">
 					<ul className="navigation-links">
