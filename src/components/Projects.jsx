@@ -188,12 +188,22 @@ const Projects = props => {
 		backEnd = (
 			<div className="projects back">
 				<div className="card">
-					<div className="card-image">
-						<img
-							src="https://cdn.aarp.net/content/dam/aarp/entertainment/music/2018/02/1140-swedish-clean-your-record-collection-01.imgcache.rev4eaf23c646379baa9401d97184efc01b.jpg"
-							alt="music collection"
-						/>
-					</div>
+					<img
+						className="image1"
+						src="https://cdn.aarp.net/content/dam/aarp/entertainment/music/2018/02/1140-swedish-clean-your-record-collection-01.imgcache.rev4eaf23c646379baa9401d97184efc01b.jpg"
+						alt="music collection"
+					/>
+					<img
+						className="image2"
+						src="https://cdn.aarp.net/content/dam/aarp/entertainment/music/2018/02/1140-swedish-clean-your-record-collection-01.imgcache.rev4eaf23c646379baa9401d97184efc01b.jpg"
+						alt="music collection"
+					/>
+					<img
+						className="image3"
+						src="https://cdn.aarp.net/content/dam/aarp/entertainment/music/2018/02/1140-swedish-clean-your-record-collection-01.imgcache.rev4eaf23c646379baa9401d97184efc01b.jpg"
+						alt="music collection"
+					/>
+
 					<div className="card-header">
 						<h5>Music-API</h5>
 					</div>
@@ -223,12 +233,22 @@ const Projects = props => {
 					</div>
 				</div>
 				<div className="card">
-					<div className="card-image">
-						<img
-							src="https://angelusnews.com/system/images/W1siZiIsIjIwMTkvMDQvMjkvNm05cnU2cnp0el9Cb29rX2NvbGxlY3Rpb24uanBnIl0sWyJwIiwidGh1bWIiLCIxNDAweCJdXQ/image.jpg"
-							alt="book collection"
-						/>
-					</div>
+					<img
+						className="image1"
+						src="https://angelusnews.com/system/images/W1siZiIsIjIwMTkvMDQvMjkvNm05cnU2cnp0el9Cb29rX2NvbGxlY3Rpb24uanBnIl0sWyJwIiwidGh1bWIiLCIxNDAweCJdXQ/image.jpg"
+						alt="book collection"
+					/>
+					<img
+						className="image2"
+						src="https://angelusnews.com/system/images/W1siZiIsIjIwMTkvMDQvMjkvNm05cnU2cnp0el9Cb29rX2NvbGxlY3Rpb24uanBnIl0sWyJwIiwidGh1bWIiLCIxNDAweCJdXQ/image.jpg"
+						alt="book collection"
+					/>
+					<img
+						className="image3"
+						src="https://angelusnews.com/system/images/W1siZiIsIjIwMTkvMDQvMjkvNm05cnU2cnp0el9Cb29rX2NvbGxlY3Rpb24uanBnIl0sWyJwIiwidGh1bWIiLCIxNDAweCJdXQ/image.jpg"
+						alt="book collection"
+					/>
+
 					<div className="card-header">
 						<h5>Library-API</h5>
 					</div>

@@ -1586,6 +1586,13 @@ body p {
   height: 200px;
   border: 2px solid grey;
   border-top: 10px solid grey;
+  font-family: "Roboto";
+}
+
+.landing-page .landing-text h2 {
+  font-size: 40px;
+  margin: 5px;
+  color: whitesmoke;
 }
 
 .landing-page .landing-text .typewriter .role {
@@ -1621,6 +1628,7 @@ body p {
           animation-fill-mode: forwards;
   font-size: 24px;
   color: rgba(245, 245, 245, 0.616);
+  font-style: italic;
 }
 
 .landing-page .landing-text .typewriter .person {
@@ -1638,6 +1646,7 @@ body p {
           animation-fill-mode: forwards;
   font-size: 24px;
   color: rgba(245, 245, 245, 0.596);
+  font-style: italic;
 }
 
 .landing-page .landing-text h5 {
@@ -1703,7 +1712,7 @@ body p {
   color: whitesmoke;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .landing-page:before {
     display: none;
   }
@@ -1716,17 +1725,21 @@ body p {
   .landing-page .second-border:after {
     display: none;
   }
-  .landing-page .landing-text h1 {
-    margin: 0;
+  .landing-page .landing-text {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
   }
-  .landing-page .landing-text h5 {
-    text-align: center;
-    margin: 0;
-    font-size: 1rem;
+  .landing-page .landing-text h2 {
+    font-size: 28px;
   }
-  .landing-page .landing-text h6 {
-    text-align: center;
-    font-size: 0.8rem;
+  .landing-page .landing-text .typewriter .role {
+    font-size: 16px;
+  }
+  .landing-page .landing-text .typewriter .hobby {
+    font-size: 16px;
+  }
+  .landing-page .landing-text .typewriter .person {
+    font-size: 16px;
   }
   .landing-page .navigationContainer {
     width: 90%;

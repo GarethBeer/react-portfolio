@@ -7,6 +7,7 @@ const LandingPage = () => {
 		<div className="landing-page">
 			<div className="second-border">
 				<div className="landing-text">
+					<h2>Gareth Beer</h2>
 					<div className="typewriter">
 						<h4 className="role">Front end software developer</h4>
 
