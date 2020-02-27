@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const LandingPage = () => {
-	console.log("hello");
+	console.log("You'll find no errors here.. ");
 	return (
 		<div className="landing-page">
 			<div className="second-border">

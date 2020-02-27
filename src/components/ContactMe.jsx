@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/_ContactMe.scss";
 import NavBar from "./NavBar";
 import Climbing from "../styles/images/Climbing.jpeg";
-import Hellvelyn from "../styles/images/Hellvellyn.jpg";
-import Lake from "../styles/images/lake.JPG";
-import axios from "axios";
+import HaLing from "../styles/images/HaLing.jpg";
+
+import RundleJames from "../styles/images/RundleJames.jpg";
 
 const ContactMe = () => {
-	const [state, setState] = useState({
+	/*const [state, setState] = useState({
 		name: "",
 		email: "",
 		message: ""
@@ -19,7 +19,7 @@ const ContactMe = () => {
 			message: ""
 		});
 	};
-	const onSubmit = e => {
+	 const onSubmit = e => {
 		e.preventDefault();
 
 		axios({
@@ -34,7 +34,7 @@ const ContactMe = () => {
 				alert("message failed to send.");
 			}
 		});
-	};
+	}; */
 	return (
 		<div>
 			<NavBar />
@@ -78,10 +78,10 @@ const ContactMe = () => {
 
 					<div className="image-gallery">
 						<div className="picture one">
-							<img src={Hellvelyn} alt="mountain" className="pic-1" />
+							<img src={RundleJames} alt="mountain" className="pic-1" />
 							<p className="text-1">
 								<span className="fas fa-map-marked-alt"></span>
-								{"  "}Hellvelyn - Lake District 19'
+								{"  "}James and I on top of Mount Rundle - Banff 16'
 							</p>
 						</div>
 						<div className="picture two">
@@ -92,10 +92,10 @@ const ContactMe = () => {
 							</h4>
 						</div>
 						<div className="picture three">
-							<img src={Lake} alt="mountain" className="pic-3" />
+							<img src={HaLing} alt="mountain" className="pic-3" />
 							<h4 className="text-3">
 								<span className="fas fa-map-marked-alt"></span>
-								{"  "}Hellvelyn - Lake District 19'
+								{"  "}Ha Ling at Sunrise - Canmore 17'
 							</h4>
 						</div>
 					</div>
